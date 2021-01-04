@@ -1,0 +1,229 @@
+.section_4 {
+    background:$background_section;
+    border:1px solid $border;
+    border-radius:5px;
+    color:$text;
+    font-family:blinker;
+    margin-top:50px;
+    width:100%;
+    a {
+        border:1px solid $button;
+        border-radius:5px;
+        color:$button;
+        display:inline-block;
+        font-size:14px;
+        padding:10px;
+        text-decoration:none;
+    }
+    h5 {
+        margin-bottom:25px;
+    }
+    .product {
+        border:1px solid $border;
+        margin:5px;
+        padding:15px;
+    }
+    .text {
+        font-size:18px;
+        margin-left:10px;
+    }
+}
+
+
+@media (max-width:768px) {
+    .section_4 {
+        .img_area {
+            display:flex;
+            justify-content:center;
+            margin-top:15px;
+        }
+        .info_area {
+            display:flex;
+            justify-content:center;
+            .bo {
+                margin-bottom:15px;
+            }
+            .button_area {
+                display:flex;
+                justify-content:center;
+                a {
+                    margin-left:0;
+                }
+            }
+            h5 {
+                font-size:15px;
+                text-align:center;
+            }
+        }
+        .marg {
+            margin-top:25px;
+        }
+        .small {
+            margin-top:25px;
+        }
+    }
+}
+
+
+@media (min-width:769px) and (max-width:1199px) {
+    .section_4 {
+        .img_area {
+            display:flex;
+            justify-content:center;
+            margin-top:15px;
+        }
+        .info_area {
+            display:flex;
+            justify-content:center;
+            .button_area {
+                display:flex;
+                justify-content:center;
+                a {
+                    margin-left:0;
+                }
+            }
+            h5 {
+                font-size:15px;
+                text-align:center;
+            }
+        }
+        .marg {
+            margin-top:25px;
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1475px) {
+    .section_4 {
+        .info_area {
+            a {
+                margin-left:15px;
+            }
+            h5 {
+                font-size:15px;
+                margin-left:15px;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .section_4 {
+        border:1.25px solid $border;
+        border-radius:6.2px;
+        margin-top:62px;
+        a {
+            border:1.25px solid $button;
+            border-radius:6.2px;
+            font-size:17px;
+            margin-left:15px;
+            padding:12.5px;
+        }
+        h5 {
+            margin-bottom:31px;
+        }
+        .product {
+            border:1.25px solid $border;
+            height:auto;
+            margin:6.2px;
+            padding:18px;
+            width:125%;
+        }
+        .text {
+            font-size:22px;
+            margin-left:12.5px;
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .section_4 {
+        border:1.56px solid $border;
+        border-radius:7.7px;
+        margin-top:77px;
+        a {
+            border:1.56px solid $button;
+            border-radius:7.7px;
+            font-size:21px;
+            margin-left:18px;
+            padding:15.6px;
+        }
+        h5 {
+            margin-bottom:38px;
+        }
+        .product {
+            border:1.56px solid $border;
+            height:auto;
+            margin:7.7px;
+            padding:22px;
+            width:150%;
+        }
+        .text {
+            font-size:27px;
+            margin-left:15.6px;
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .section_4 {
+        border:1.95px solid $border;
+        border-radius:9.6px;
+        margin-top:96px;
+        a {
+            border:1.95px solid $button;
+            border-radius:9.6px;
+            font-size:26px;
+            margin-left:22px;
+            padding:19.5px;
+        }
+        h5 {
+            margin-bottom:47px;
+        }
+        .product {
+            border:1.95px solid $border;
+            height:auto;
+            margin:9.6px;
+            padding:27px;
+            width:175%;
+        }
+        .text {
+            font-size:33px;
+            margin-left:19.5px;
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .section_4 {
+        border:2.43px solid $border;
+        border-radius:12px;
+        margin-top:120px;
+        a {
+            border:2.43px solid $button;
+            border-radius:12px;
+            font-size:32px;
+            margin-left:27px;
+            padding:24.3px;
+        }
+        h5 {
+            margin-bottom:58px;
+        }
+        .product {
+            border:2.43px solid $border;
+            height:auto;
+            margin:12px;
+            padding:33px;
+            width:200%;
+        }
+        .text {
+            font-size:41px;
+            margin-left:24.3px;
+        }
+    }
+}

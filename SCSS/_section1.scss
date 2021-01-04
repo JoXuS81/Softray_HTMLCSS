@@ -1,0 +1,180 @@
+.section_1 {
+    background:$background_section;
+    border:1px solid $border;
+    border-radius:5px;
+    color:$text;
+    font-family:blinker;
+    margin-top:50px;
+    a {
+        border:1px solid $button;
+        border-radius:5px;
+        color:$button;
+        display:inline-block;
+        font-size:14px;
+        padding:10px;
+        text-decoration:none;
+    }
+    h5 {
+        @include h5;
+        margin-bottom:25px;
+    }
+    .product {
+        padding:15px;
+    }
+    .text {
+        font-size:18px;
+    }
+}
+
+
+@media (max-width:992px) {
+    .section_1 {
+        width:100%;
+        .bottom_area {
+            margin-bottom:15px;
+        }
+        .holder {
+            margin-top:50px;
+        }
+        .holder_second {
+            margin-top:50px;
+        }
+    }
+}
+
+
+@media (min-width:993px) and (max-width:1199px) {
+    .section_1 {
+        width:100%;
+        .bottom_area {
+            margin-bottom:15px;
+        }
+        .holder {
+            margin-top:50px;
+        }
+    }
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .section_1 {
+        border:1.25px solid $border;
+        border-radius:6.2px;
+        margin-top:62px;
+        a {
+            border:1.25px solid $button;
+            border-radius:6.2px;
+            font-size:17px;
+            padding:12.5px;
+        }
+        h5 {
+            @include h5_2000;
+            margin-bottom:31px;
+        }
+        img {
+            height:18px;
+            width:25px;
+        }
+        .product {
+            height:auto;
+            padding:18px;
+            width:125%;
+        }
+        .text {
+            font-size:22px;
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .section_1 {
+        border:1.56px solid $border;
+        border-radius:7.7px;
+        margin-top:77px;
+        a {
+            border:1.56px solid $button;
+            border-radius:7.7px;
+            font-size:21px;
+            padding:15.6px;
+        }
+        h5 {
+            @include h5_2500;
+            margin-bottom:38px;
+        }
+        img {
+            height:22px;
+            width:31px;
+        }
+        .product {
+            height:auto;
+            padding:22px;
+            width:150%;
+        }
+        .text {
+            font-size:27px;
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .section_1 {
+        border:1.95px solid $border;
+        border-radius:9.6px;
+        margin-top:96px;
+        a {
+            border:1.95px solid $button;
+            border-radius:9.6px;
+            font-size:26px;
+            padding:19.5px;
+        }
+        h5 {
+            @include h5_3125;
+            margin-bottom:47px;
+        }
+        img {
+            height:27px;
+            width:38px;
+        }
+        .product {
+            height:auto;
+            padding:27px;
+            width:175%;
+        }
+        .text {
+            font-size:33px;
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .section_1 {
+        border:2.43px solid $border;
+        border-radius:12px;
+        margin-top:120px;
+        a {
+            border:2.43px solid $button;
+            border-radius:12px;
+            font-size:32px;
+            padding:24.3px;
+        }
+        h5 {
+            @include h5_3850;
+            margin-bottom:58px;
+        }
+        img {
+            height:33px;
+            width:47px;
+        }
+        .product {
+            height:auto;
+            padding:33px;
+            width:200%;
+        }
+        .text {
+            font-size:41px;
+        }
+    }
+}

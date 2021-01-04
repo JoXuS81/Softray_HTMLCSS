@@ -1,0 +1,579 @@
+.section_7 {
+    display:grid;
+    font-family:blinker;
+    grid-template-columns:66.5% 33.5%;
+    margin-top:50px;
+    width:100%;
+    .fruit_drones {
+        .drones {
+            border:1px solid $border;
+            border-radius:5px;
+            display:grid;
+            grid-template-columns:50% 50%;
+            margin-top:50px;
+            p {
+                color:$text;
+                margin-left:15px;
+                width:200px;
+            }
+        }
+        .fruit {
+            background:url("../Images/Section7/Fruit.jpg");
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            border:1px solid transparent;
+            border-radius:5px;
+            box-shadow:inset 4000px 0 0 0 rgba(0, 102, 177, 0.5);
+            height:248px;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            -webkit-background-size:cover;
+            .produc {
+                margin:20px 0 10px 15px;
+            }
+            p {
+                color:$background_section;
+                margin:0;
+                margin-left:15px;
+                padding:0;
+            }
+        }
+    }
+    h2 {
+        @include h2;
+        width:400px;
+    }
+    h3 {
+        @include h3;
+        color:$background_section;
+    }
+    h5 {
+        @include h5;
+        color:$price;
+        margin:20px 0 15px 15px;
+    }
+    .photography_tech {
+        .photography {
+            background:url("../Images/Section7/Photography.png");
+            background-position:center;
+            background-repeat:no-repeat;
+            background-size:cover;
+            border:1px solid transparent;
+            border-radius:5px;
+            box-shadow:inset 4000px 0 0 0 rgba(0, 102, 177, 0.5);
+            margin-right:10px;
+            -moz-background-size:cover;
+            -o-background-size:cover;
+            -webkit-background-size:cover;
+            .hobby {
+                margin:20px 0 10px 15px;
+            }
+            .learn {
+                background:$learn_button;
+                border:transparent;
+                margin-bottom:30px;
+                margin-left:15px;
+                margin-top:15px;
+            }
+            p {
+                color:$background_section;
+                margin:0;
+                margin-left:15px;
+                padding:0;
+                width:400px;
+            }
+        }
+        .tablet_watch {
+            display:grid;
+            grid-template-columns:50% 50%;
+            margin-bottom:50px;
+            position:relative;
+            right:5px;
+            width:100%;
+            .tech {
+                border:1px solid $border;
+                border-radius:5px;
+                display:grid;
+                grid-template-columns:50% 50%;
+                margin-left:5px;
+                margin-right:5px;
+                margin-top:50px;
+                p {
+                    color:$text;
+                    margin-left:15px;
+                    width:200px;
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width:525px) {
+    .section_7 {
+        grid-template-columns:100% 100%;
+        .fruit_drones {
+            grid-row:2;
+        }
+        .photography_tech {
+            grid-row:1;
+            .photography {
+                margin-right:0;
+                .hobby {
+                    font-size:25px;
+                    width:initial;
+                }
+                p {
+                    width:initial;
+                }
+            }
+            .tablet_watch {
+                grid-template-columns:100% 100%;
+                right:0;
+            }
+            .tech {
+                margin-right:0;
+            }
+            .tech_1 {
+                grid-row:1;
+            }
+            .tech_2 {
+                grid-row:2;
+            }
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:1199px) {
+    .section_7 {
+        grid-template-columns:100% 100%;
+        .fruit_drones {
+            grid-row:2;
+        }
+        .photography_tech {
+            grid-row:1;
+            .photography {
+                margin-right:0;
+            }
+            .tablet_watch {
+                grid-template-columns:100% 100%;
+                right:0;
+            }
+            .tech {
+                margin-right:0;
+            }
+            .tech_1 {
+                grid-row:1;
+            }
+            .tech_2 {
+                grid-row:2;
+            }
+        }
+    }
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .section_7 {
+        margin-top:62px;
+        .fruit_drones {
+            .drones {
+                border:1.25px solid $border;
+                border-radius:6.2px;
+                margin-top:58px;
+                .dro {
+                    height:auto;
+                    width:125%;
+                }
+                p {
+                    margin-left:18px;
+                    width:250px;
+                }
+                .quick {
+                    font-size:20px;
+                }
+            }
+            .fruit {
+                border:1.25px solid transparent;
+                border-radius:6.2px;
+                box-shadow:inset 5000px 0 0 0 rgba(0, 102, 177, 0.5);
+                height:310px;
+                .matter {
+                    font-size:20px;
+                }
+                .produc {
+                    margin:25px 0 12.5px 18px;
+                }
+                p {
+                    margin-left:18px;
+                }
+            }
+        }
+        h2 {
+            @include h2_2000;
+            width:500px;
+        }
+        h3 {
+            @include h3_2000;
+        }
+        h5 {
+            @include h5_2000;
+            margin:25px 0 18px 18px;
+        }
+        .photography_tech {
+            .photography {
+                border:1.25px solid transparent;
+                border-radius:6.2px;
+                box-shadow:inset 5000px 0 0 0 rgba(0, 102, 177, 0.5);
+                margin-right:12.5px;
+                .hobby {
+                    margin:25px 0 12.5px 18px;
+                }
+                .learn {
+                    font-size:20px;
+                    margin-bottom:37px;
+                    margin-left:18px;
+                    margin-top:18px;
+                }
+                .lorem {
+                    font-size:20px;
+                }
+                p {
+                    margin-left:18px;
+                    width:500px;
+                }
+            }
+            .tablet_watch {
+                margin-bottom:62px;
+                right:6.2px;
+                .tech {
+                    border:1.25px solid $border;
+                    border-radius:6.2px;
+                    margin-left:6.2px;
+                    margin-right:6.2px;
+                    margin-top:62px;
+                    p {
+                        margin-left:18px;
+                        width:250px;
+                    }
+                    .quick {
+                        font-size:20px;
+                    }
+                    .tabl {
+                        height:auto;
+                        width:125%;
+                    }
+                    .wa {
+                        height:auto;
+                        width:125%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .section_7 {
+        margin-top:77px;
+        .fruit_drones {
+            .drones {
+                border:1.56px solid $border;
+                border-radius:7.7px;
+                margin-top:72px;
+                .dro {
+                    height:auto;
+                    width:150%;
+                }
+                p {
+                    margin-left:22px;
+                    width:312px;
+                }
+                .quick {
+                    font-size:25px;
+                }
+            }
+            .fruit {
+                border:1.56px solid transparent;
+                border-radius:7.7px;
+                box-shadow:inset 6250px 0 0 0 rgba(0, 102, 177, 0.5);
+                height:375px;
+                .matter {
+                    font-size:25px;
+                }
+                .produc {
+                    margin:31px 0 15.6px 22px;
+                }
+                p {
+                    margin-left:22px;
+                }
+            }
+        }
+        h2 {
+            @include h2_2500;
+            width:625px;
+        }
+        h3 {
+            @include h3_2500;
+        }
+        h5 {
+            @include h5_2500;
+            margin:31px 0 22px 22px;
+        }
+        .photography_tech {
+            .photography {
+                border:1.56px solid transparent;
+                border-radius:7.7px;
+                box-shadow:inset 6250px 0 0 0 rgba(0, 102, 177, 0.5);
+                margin-right:15.6px;
+                .hobby {
+                    margin:31px 0 15.6px 22px;
+                }
+                .learn {
+                    font-size:25px;
+                    margin-bottom:46px;
+                    margin-left:22px;
+                    margin-top:22px;
+                }
+                .lorem {
+                    font-size:25px;
+                }
+                p {
+                    margin-left:22px;
+                    width:625px;
+                }
+            }
+            .tablet_watch {
+                margin-bottom:77px;
+                right:7.7px;
+                .tech {
+                    border:1.56px solid $border;
+                    border-radius:7.7px;
+                    margin-left:7.7px;
+                    margin-right:7.7px;
+                    margin-top:77px;
+                    p {
+                        margin-left:22px;
+                        width:312px;
+                    }
+                    .quick {
+                        font-size:25px;
+                    }
+                    .tabl {
+                        height:auto;
+                        width:150%;
+                    }
+                    .wa {
+                        height:auto;
+                        width:150%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .section_7 {
+        margin-top:96px;
+        .fruit_drones {
+            .drones {
+                border:1.95px solid $border;
+                border-radius:9.6px;
+                margin-top:90px;
+                .dro {
+                    height:auto;
+                    width:175%;
+                }
+                p {
+                    margin-left:27px;
+                    width:390px;
+                }
+                .quick {
+                    font-size:31px;
+                }
+            }
+            .fruit {
+                border:1.95px solid transparent;
+                border-radius:9.6px;
+                box-shadow:inset 7810px 0 0 0 rgba(0, 102, 177, 0.5);
+                height:468px;
+                .matter {
+                    font-size:31px;
+                }
+                .produc {
+                    margin:38px 0 19.5px 27px;
+                }
+                p {
+                    margin-left:27px;
+                }
+            }
+        }
+        h2 {
+            @include h2_3125;
+            width:781px;
+        }
+        h3 {
+            @include h3_3125;
+        }
+        h5 {
+            @include h5_3125;
+            margin:38px 0 27px 27px;
+        }
+        .photography_tech {
+            .photography {
+                border:1.95px solid transparent;
+                border-radius:9.6px;
+                box-shadow:inset 7810px 0 0 0 rgba(0, 102, 177, 0.5);
+                margin-right:19.5px;
+                .hobby {
+                    margin:38px 0 19.5px 27px;
+                }
+                .learn {
+                    font-size:31px;
+                    margin-bottom:57px;
+                    margin-left:27px;
+                    margin-top:27px;
+                }
+                .lorem {
+                    font-size:31px;
+                }
+                p {
+                    margin-left:27px;
+                    width:781px;
+                }
+            }
+            .tablet_watch {
+                margin-bottom:96px;
+                right:9.6px;
+                .tech {
+                    border:1.95px solid $border;
+                    border-radius:9.6px;
+                    margin-left:9.6px;
+                    margin-right:9.6px;
+                    margin-top:96px;
+                    p {
+                        margin-left:27px;
+                        width:390px;
+                    }
+                    .quick {
+                        font-size:31px;
+                    }
+                    .tabl {
+                        height:auto;
+                        width:175%;
+                    }
+                    .wa {
+                        height:auto;
+                        width:175%;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .section_7 {
+        margin-top:120px;
+        .fruit_drones {
+            .drones {
+                border:2.43px solid $border;
+                border-radius:12px;
+                margin-top:112px;
+                .dro {
+                    height:auto;
+                    width:200%;
+                }
+                p {
+                    margin-left:33px;
+                    width:488px;
+                }
+                .quick {
+                    font-size:38px;
+                }
+            }
+            .fruit {
+                border:2.43px solid transparent;
+                border-radius:12px;
+                box-shadow:inset 9760px 0 0 0 rgba(0, 102, 177, 0.5);
+                height:572px;
+                .matter {
+                    font-size:38px;
+                }
+                .produc {
+                    margin:47px 0 24.3px 33px;
+                }
+                p {
+                    margin-left:33px;
+                }
+            }
+        }
+        h2 {
+            @include h2_3850;
+            width:976px;
+        }
+        h3 {
+            @include h3_3850;
+        }
+        h5 {
+            @include h5_3850;
+            margin:47px 0 33px 33px;
+        }
+        .photography_tech {
+            .photography {
+                border:2.43px solid transparent;
+                border-radius:12px;
+                box-shadow:inset 9760px 0 0 0 rgba(0, 102, 177, 0.5);
+                margin-right:24.3px;
+                .hobby {
+                    margin:47px 0 24.3px 33px;
+                }
+                .learn {
+                    font-size:38px;
+                    margin-bottom:71px;
+                    margin-left:33px;
+                    margin-top:33px;
+                }
+                .lorem {
+                    font-size:38px;
+                }
+                p {
+                    margin-left:33px;
+                    width:976px;
+                }
+            }
+            .tablet_watch {
+                margin-bottom:120px;
+                right:12px;
+                .tech {
+                    border:2.43px solid $border;
+                    border-radius:12px;
+                    margin-left:12px;
+                    margin-right:12px;
+                    margin-top:120px;
+                    p {
+                        margin-left:33px;
+                        width:488px;
+                    }
+                    .quick {
+                        font-size:38px;
+                    }
+                    .tabl {
+                        height:auto;
+                        width:200%;
+                    }
+                    .wa {
+                        height:auto;
+                        width:200%;
+                    }
+                }
+            }
+        }
+    }
+}

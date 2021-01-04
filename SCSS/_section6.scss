@@ -1,0 +1,1192 @@
+.section_6 {
+    color:$text;
+    display:grid;
+    grid-template-columns:75% 25%;
+    font-family:blinker;
+    margin-top:50px;
+    width:100%;
+    .deliv {
+        background:$background_section;
+        border:1px solid $border;
+        border-bottom-left-radius:5px;
+        border-bottom-right-radius:5px;
+        height:75px;
+        width:calc(100% - 15px);
+        img {
+            display:inline;
+            margin-left:15px;
+        }
+        p {
+            display:inline;
+            margin-left:10px;
+        }
+    }
+    h4 {
+        @include h4;
+        margin:0;
+        padding:0;
+    }
+    h5 {
+        @include h5;
+        font-family:blinker_bold;
+        font-size:17px;
+        margin:15px 0 0 15px;
+    }
+    .left {
+        background:$background_section;
+        border:1px solid $border;
+        border-top-left-radius:5px;
+        border-top-right-radius:5px;
+        display:grid;
+        grid-template-columns:45% 20% 15% 20%;
+        margin-right:15px;
+        padding-bottom:35px;
+        .quantity {
+            .bottom {
+                margin-left:15px;
+                margin-top:88px;
+                form {
+                    select {
+                        border:0.5px solid $sizes;
+                        border-radius:5px;
+                        font-size:20px;
+                        padding:5px 20px 5px 10px;
+                        option {
+                            font-size:20px;
+                        }
+                    }
+                }
+            }
+            .cam {
+                margin-left:15px;
+                margin-top:50px;
+                form {
+                    select {
+                        border:0.5px solid $sizes;
+                        border-radius:5px;
+                        font-size:20px;
+                        padding:5px 20px 5px 10px;
+                        option {
+                            font-size:20px;
+                        }
+                    }
+                }
+            }
+        }
+        .price {
+            .bottom {
+                margin-left:15px;
+                margin-top:65px;
+                p {
+                    margin:0;
+                    padding:0;
+                }
+            }
+            .cam {
+                margin-left:15px;
+                margin-top:45px;
+                p {
+                    margin:0;
+                    padding:0;
+                }
+            }
+        }
+        .prod {
+            display:grid;
+            grid-template-columns:25% 75%;
+            font-family:blinker;
+            margin-left:25px;
+            margin-top:50px;
+            .info_area {
+                margin-left:15px;
+                .info {
+                    font-family:blinker;
+                    margin:0;
+                }
+                .more_info {
+                    margin:0;
+                    margin-top:10px;
+                    padding:0;
+                }
+                p {
+                    font-size:13px;
+                    margin:0;
+                    padding:0;
+                }
+            }
+            .product {
+                height:auto;
+                width:125%;
+            }
+        }
+        .remove {
+            .cont {
+                margin-right:25px;
+                .bottom {
+                    margin-top:80px;
+                    .heart {
+                        background:$background_section;
+                        border:1px solid $rating;
+                    }
+                    .remo {
+                        background:$background_section;
+                        border:1px solid $rating;
+                        color:$price;
+                    }
+                }
+                .top {
+                    margin-top:86px;
+                    .heart {
+                        background:$background_section;
+                        border:1px solid $rating;
+                    }
+                    .remo {
+                        background:$background_section;
+                        border:1px solid $rating;
+                        color:$price;
+                    }
+                }
+            }
+        }
+    }
+    p {
+        font-size:20px;
+    }
+    .right {
+        .botto {
+            background:$background_section;
+            border:1px solid $border;
+            border-radius:5px;
+            .in {
+                display:grid;
+                grid-template-columns:50% 50%;
+                .le {
+                    margin:15px 0 0 15px;
+                    .discount {
+                        margin:0;
+                        padding:0;
+                    }
+                    .price {
+                        margin:0;
+                        padding:0;
+                    }
+                    .total {
+                        margin:0;
+                        padding:0;
+                    }
+                }
+                .ri {
+                    margin:15px 15px 0 0;
+                    .price_1 {
+                        margin:0;
+                        margin-left:7px;
+                        padding:0;
+                    }
+                    .price_2 {
+                        color:$bottom_prices;
+                        margin:0;
+                        padding:0;
+                    }
+                    .price_3 {
+                        font-family:blinker_bold;
+                        margin:0;
+                        margin-left:7px;
+                        padding:0;
+                    }
+                }
+            }
+            .line {
+                background:$border;
+                height:1px;
+                margin:15px 15px 15px 15px;
+                width:calc(100% - 30px);
+            }
+            .purchase {
+                margin:15px 0 0;
+                .purchase_button {
+                    padding-left:25px;
+                    padding-right:25px;
+                }
+            }
+            .shopping {
+                margin:15px 0 15px 0;
+                .shopping_button {
+                    background:transparent;
+                    border:1px solid $border;
+                    color:$text;
+                }
+            }
+        }
+        .top {
+            background:$background_section;
+            border:1px solid $border;
+            border-radius:5px;
+            margin-bottom:15px;
+            .apply {
+                border-bottom-left-radius:0;
+                border-top-left-radius:0;
+                margin:5px 15px 35px 0;
+                padding:10px 10px 10px 10px;
+            }
+            .coupon {
+                border:0.5px solid $border;
+                border-bottom-left-radius:5px;
+                border-top-left-radius:5px;
+                margin:5px 0 35px 15px;
+                padding:10px 25px 10px 10px;
+            }
+            p {
+                margin:20px 0 0 15px;
+            } 
+        }
+    }
+}
+
+
+@media (max-width:525px) {
+    .section_6 {
+        grid-template-columns:100% 100%;
+        .deliv {
+            grid-row:2;
+            width:100%;
+        }
+        h4 {
+            position:relative;
+            top:20px;
+        }
+        h5 {
+            font-family:blinker;
+            font-size:15px;
+        }
+        .left {
+            grid-row:1;
+            grid-template-columns:25% 25% 25% 25%;
+            margin-right:0;
+            .quantity {
+                .bottom {
+                    margin-top:75px;
+                }
+                .cam {
+                    margin-top:65px;
+                }
+            }
+            .price {
+                .bo {
+                    top:63px;
+                }
+                h4 {
+                    font-size:18px;
+                }
+                .mid {
+                    top:42px;
+                }
+                p {
+                    display:none;
+                }
+            }
+            .prod {
+                margin-left:5px;
+                .info_area {
+                    display:none;
+                }
+            }
+            .remove {
+                .cont {
+                    margin-right:5px;
+                    .bottom {
+                        .heart {
+                            display:none;
+                        }
+                        .remo {
+                            font-size:12px;
+                            position:relative;
+                            top:5px;
+                        }
+                    }
+                    .top {
+                        .heart {
+                            display:none;
+                        }
+                        .remo {
+                            font-size:12px;
+                            position:relative;
+                            top:5px;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            grid-row:3;
+            margin-top:15px;
+        }
+    }
+}
+
+
+@media (min-width:526px) and (max-width:1050px) {
+    .section_6 {
+        grid-template-columns:100% 100%;
+        .deliv {
+            grid-row:2;
+            width:100%;
+        }
+        .left {
+            grid-row:1;
+            grid-template-columns:25% 25% 25% 25%;
+            margin-right:0;
+            .prod {
+                margin-left:5px;
+                .info_area {
+                    display:none;
+                }
+            }
+            .remove {
+                .cont {
+                    margin-right:5px;
+                    .bottom {
+                        .heart {
+                            display:none;
+                        }
+                    }
+                    .top {
+                        .heart {
+                            display:none;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            grid-row:3;
+            margin-top:15px;
+        }
+    }
+}
+
+
+@media (min-width:1051px) and (max-width:1199px) {
+    .section_6 {
+        grid-template-columns:100% 100%;
+        .deliv {
+            grid-row:2;
+            width:100%;
+        }
+        .left {
+            grid-row:1;
+            margin-right:0;
+        }
+        .right {
+            grid-row:3;
+            margin-top:15px;
+        }
+    }
+}
+
+
+@media (min-width:1200px) and (max-width:1425px) {
+    .section_6 {
+        .left {
+            .remove {
+                .cont {
+                    .bottom {
+                        .heart {
+                            display:none;
+                        }
+                    }
+                    .top {
+                        .heart {
+                            display:none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (min-width:1601px) and (max-width:2000px) {
+    .section_6 {
+        margin-top:62px;
+        .deliv {
+            border:1.25px solid $border;
+            border-bottom-left-radius:6.2px;
+            border-bottom-right-radius:6.2px;
+            height:93px;
+            width:calc(100% - 18px);
+            img {
+                height:25px;
+                margin-left:18px;
+                width:31px;
+            }
+            p {
+                margin-left:12.5px;
+            }
+        }
+        h4 {
+            @include h4_2000;
+        }
+        h5 {
+            @include h5_2000;
+            font-size:21px;
+            margin:18px 0 0 18px;
+        }
+        .left {
+            border:1.25px solid $border;
+            border-top-left-radius:6.2px;
+            border-top-right-radius:6.2px;
+            margin-right:18px;
+            padding-bottom:43px;
+            .quantity {
+                .bottom {
+                    margin-left:18px;
+                    margin-top:110px;
+                    form {
+                        select {
+                            border:0.62px solid $sizes;
+                            border-radius:6.2px;
+                            padding:6.2px 25px 6.2px 12.5px;
+                        }
+                    }
+                }
+                .cam {
+                    margin-left:18px;
+                    margin-top:62px;
+                    form {
+                        select {
+                            border:0.62px solid $sizes;
+                            border-radius:6.2px;
+                            padding:6.2px 25px 6.2px 12.5px;
+                        }
+                    }
+                }
+            }
+            .price {
+                .bottom {
+                    margin-left:18px;
+                    margin-top:81px;
+                }
+                .cam {
+                    margin-left:18px;
+                    margin-top:56px;
+                }
+            }
+            .prod {
+                margin-left:31px;
+                margin-top:62px;
+                .info_area {
+                    margin-left:18px;
+                    .more_info {
+                        margin-top:12.5px;
+                    }
+                    p {
+                        font-size:16px;
+                    }
+                }
+            }
+            .remove {
+                .cont {
+                    margin-right:31px;
+                    .bottom {
+                        margin-top:100px;
+                        .heart {
+                            border:1.25px solid $rating;
+                        }
+                        .remo {
+                            border:1.25px solid $rating;
+                            font-size:20px;
+                        }
+                    }
+                    .top {
+                        margin-top:107px;
+                        .heart {
+                            border:1.25px solid $rating;
+                        }
+                        .remo {
+                            border:1.25px solid $rating;
+                            font-size:20px;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            .botto {
+                border:1.25px solid $border;
+                border-radius:6.2px;
+                .cards {
+                    img {
+                        height:30px;
+                        width:208px;
+                    }
+                }
+                .in {
+                    .le {
+                        margin:18px 0 0 18px;
+                        .discount {
+                            font-size:20px;
+                        }
+                        .price {
+                            font-size:20px;
+                        }
+                        .total {
+                            font-size:20px;
+                        }
+                    }
+                    .ri {
+                        margin:18px 18px 0 0;
+                        .price_1 {
+                            font-size:20px;
+                            margin-left:8.7px;
+                        }
+                        .price_2 {
+                            font-size:20px;
+                        }
+                        .price_3 {
+                            font-size:20px;
+                            margin-left:8.7px;
+                        }
+                    }
+                }
+                .line {
+                    height:1.25px;
+                    margin:18px 18px 18px 18px;
+                    width:calc(100% - 37px);
+                }
+                .purchase {
+                    margin:18px 0 0;
+                    .purchase_button {
+                        font-size:20px;
+                        padding-left:31px;
+                        padding-right:31px;
+                    }
+                }
+                .shopping {
+                    margin:18px 0 18px 0;
+                    .shopping_button {
+                        border:1.25px solid $border;
+                        font-size:20px;
+                    }
+                }
+            }
+            .top {
+                border:1.25px solid $border;
+                border-radius:6.2px;
+                margin-bottom:18px;
+                .apply {
+                    font-size:16px;
+                    margin:6.2px 18px 43px 0;
+                    padding:12.5px 12.5px 12.5px 12.5px;
+                }
+                .coupon {
+                    border:0.62px solid $border;
+                    border-bottom-left-radius:6.2px;
+                    border-top-left-radius:6.2px;
+                    margin:6.2px 0 43px 18px;
+                    padding:12.5px 31px 12.5px 12.5px;
+                }
+                input[placeholder] {
+                    font-size:15px;
+                }
+                p {
+                    margin:25px 0 0 18px;
+                } 
+            }
+        }
+    }
+}
+
+
+@media (min-width:2001px) and (max-width:2500px) {
+    .section_6 {
+        margin-top:77px;
+        .deliv {
+            border:1.56px solid $border;
+            border-bottom-left-radius:7.7px;
+            border-bottom-right-radius:7.7px;
+            height:116px;
+            width:calc(100% - 22px);
+            img {
+                height:31px;
+                margin-left:22px;
+                width:38px;
+            }
+            p {
+                font-size:25px;
+                margin-left:15.6px;
+            }
+        }
+        h4 {
+            @include h4_2500;
+        }
+        h5 {
+            @include h5_2500;
+            font-size:26px;
+            margin:22px 0 0 22px;
+        }
+        .left {
+            border:1.56px solid $border;
+            border-top-left-radius:7.7px;
+            border-top-right-radius:7.7px;
+            margin-right:22px;
+            padding-bottom:53px;
+            .quantity {
+                .bottom {
+                    margin-left:22px;
+                    margin-top:137px;
+                    form {
+                        select {
+                            border:0.77px solid $sizes;
+                            border-radius:7.7px;
+                            padding:7.7px 31px 7.7px 15.6px;
+                        }
+                    }
+                }
+                .cam {
+                    margin-left:22px;
+                    margin-top:77px;
+                    form {
+                        select {
+                            border:0.77px solid $sizes;
+                            border-radius:7.7px;
+                            padding:7.7px 31px 7.7px 15.6px;
+                        }
+                    }
+                }
+            }
+            .price {
+                .bottom {
+                    margin-left:22px;
+                    margin-top:101px;
+                }
+                .cam {
+                    margin-left:22px;
+                    margin-top:70px;
+                }
+            }
+            .prod {
+                margin-left:38px;
+                margin-top:77px;
+                .info_area {
+                    margin-left:22px;
+                    .more_info {
+                        font-size:20px;
+                        margin-top:15.6px;
+                    }
+                    p {
+                        font-size:20px;
+                    }
+                }
+            }
+            .remove {
+                .cont {
+                    margin-right:38px;
+                    .bottom {
+                        margin-top:125px;
+                        .heart {
+                            border:1.56px solid $rating;
+                        }
+                        .remo {
+                            border:1.56px solid $rating;
+                            font-size:25px;
+                        }
+                    }
+                    .top {
+                        margin-top:133px;
+                        .heart {
+                            border:1.56px solid $rating;
+                        }
+                        .remo {
+                            border:1.56px solid $rating;
+                            font-size:25px;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            .botto {
+                border:1.56px solid $border;
+                border-radius:7.7px;
+                .cards {
+                    img {
+                        height:37px;
+                        width:260px;
+                    }
+                }
+                .in {
+                    .le {
+                        margin:22px 0 0 22px;
+                        .discount {
+                            font-size:25px;
+                        }
+                        .price {
+                            font-size:25px;
+                        }
+                        .total {
+                            font-size:25px;
+                        }
+                    }
+                    .ri {
+                        margin:22px 22px 0 0;
+                        .price_1 {
+                            font-size:25px;
+                            margin-left:11px;
+                        }
+                        .price_2 {
+                            font-size:25px;
+                        }
+                        .price_3 {
+                            font-size:25px;
+                            margin-left:11px;
+                        }
+                    }
+                }
+                .line {
+                    height:1.56px;
+                    margin:22px 22px 22px 22px;
+                    width:calc(100% - 46px);
+                }
+                .purchase {
+                    margin:22px 0 0;
+                    .purchase_button {
+                        font-size:25px;
+                        padding-left:38px;
+                        padding-right:38px;
+                    }
+                }
+                .shopping {
+                    margin:22px 0 22px 0;
+                    .shopping_button {
+                        border:1.56px solid $border;
+                        font-size:25px;
+                    }
+                }
+            }
+            .top {
+                border:1.56px solid $border;
+                border-radius:7.7px;
+                margin-bottom:22px;
+                .apply {
+                    font-size:20px;
+                    margin:7.7px 22px 53px 0;
+                    padding:15.6px 15.6px 15.6px 15.6px;
+                }
+                .coupon {
+                    border:0.77px solid $border;
+                    border-bottom-left-radius:7.7px;
+                    border-top-left-radius:7.7px;
+                    margin:7.7px 0 53px 22px;
+                    padding:15.6px 38px 15.6px 15.6px;
+                }
+                input[placeholder] {
+                    font-size:18px;
+                }
+                p {
+                    margin:31px 0 0 22px;
+                } 
+            }
+        }
+    }
+}
+
+
+@media (min-width:2501px) and (max-width:3125px) {
+    .section_6 {
+        margin-top:96px;
+        .deliv {
+            border:1.95px solid $border;
+            border-bottom-left-radius:9.6px;
+            border-bottom-right-radius:9.6px;
+            height:145px;
+            width:calc(100% - 27px);
+            img {
+                height:38px;
+                margin-left:27px;
+                width:47px;
+            }
+            p {
+                font-size:31px;
+                margin-left:19.5px;
+            }
+        }
+        h4 {
+            @include h4_3125;
+        }
+        h5 {
+            @include h5_3125;
+            font-size:32px;
+            margin:27px 0 0 27px;
+        }
+        .left {
+            border:1.95px solid $border;
+            border-top-left-radius:9.6px;
+            border-top-right-radius:9.6px;
+            margin-right:27px;
+            padding-bottom:66px;
+            .quantity {
+                .bottom {
+                    margin-left:27px;
+                    margin-top:171px;
+                    form {
+                        select {
+                            border:0.96px solid $sizes;
+                            border-radius:9.6px;
+                            padding:9.6px 38px 9.6px 19.5px;
+                        }
+                    }
+                }
+                .cam {
+                    margin-left:27px;
+                    margin-top:96px;
+                    form {
+                        select {
+                            border:0.96px solid $sizes;
+                            border-radius:9.6px;
+                            padding:9.6px 38px 9.6px 19.5px;
+                        }
+                    }
+                }
+            }
+            .price {
+                .bottom {
+                    margin-left:27px;
+                    margin-top:126px;
+                }
+                .cam {
+                    margin-left:27px;
+                    margin-top:87px;
+                }
+                .each {
+                    font-size:31px;
+                }
+            }
+            .prod {
+                margin-left:47px;
+                margin-top:96px;
+                .info_area {
+                    margin-left:27px;
+                    .more_info {
+                        font-size:25px;
+                        margin-top:19.5px;
+                    }
+                    p {
+                        font-size:25px;
+                    }
+                }
+            }
+            .remove {
+                .cont {
+                    margin-right:47px;
+                    .bottom {
+                        margin-top:156px;
+                        .heart {
+                            border:1.95px solid $rating;
+                        }
+                        .remo {
+                            border:1.95px solid $rating;
+                            font-size:31px;
+                        }
+                    }
+                    .top {
+                        margin-top:166px;
+                        .heart {
+                            border:1.95px solid $rating;
+                        }
+                        .remo {
+                            border:1.95px solid $rating;
+                            font-size:31px;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            .botto {
+                border:1.95px solid $border;
+                border-radius:9.6px;
+                .cards {
+                    img {
+                        height:46px;
+                        width:325px;
+                    }
+                }
+                .in {
+                    .le {
+                        margin:27px 0 0 27px;
+                        .discount {
+                            font-size:31px;
+                        }
+                        .price {
+                            font-size:31px;
+                        }
+                        .total {
+                            font-size:31px;
+                        }
+                    }
+                    .ri {
+                        margin:27px 27px 0 0;
+                        .price_1 {
+                            font-size:31px;
+                            margin-left:13px;
+                        }
+                        .price_2 {
+                            font-size:31px;
+                        }
+                        .price_3 {
+                            font-size:31px;
+                            margin-left:13px;
+                        }
+                    }
+                }
+                .line {
+                    height:1.95px;
+                    margin:27px 27px 27px 27px;
+                    width:calc(100% - 57px);
+                }
+                .purchase {
+                    margin:27px 0 0;
+                    .purchase_button {
+                        font-size:31px;
+                        padding-left:47px;
+                        padding-right:47px;
+                    }
+                }
+                .shopping {
+                    margin:27px 0 27px 0;
+                    .shopping_button {
+                        border:1.95px solid $border;
+                        font-size:31px;
+                    }
+                }
+            }
+            .top {
+                border:1.95px solid $border;
+                border-radius:9.6px;
+                margin-bottom:27px;
+                .apply {
+                    font-size:25px;
+                    margin:9.6px 27px 66px 0;
+                    padding:19.5px 19.5px 19.5px 19.5px;
+                }
+                .cou {
+                    font-size:31px;
+                }
+                .coupon {
+                    border:0.96px solid $border;
+                    border-bottom-left-radius:9.6px;
+                    border-top-left-radius:9.6px;
+                    margin:9.6px 0 66px 27px;
+                    padding:19.5px 47px 19.5px 19.5px;
+                }
+                input[placeholder] {
+                    font-size:22px;
+                }
+                p {
+                    margin:38px 0 0 27px;
+                } 
+            }
+        }
+    }
+}
+
+
+@media (min-width:3126px) {
+    .section_6 {
+        margin-top:120px;
+        .deliv {
+            border:2.43px solid $border;
+            border-bottom-left-radius:12px;
+            border-bottom-right-radius:12px;
+            height:181px;
+            width:calc(100% - 33px);
+            img {
+                height:47px;
+                margin-left:33px;
+                width:58px;
+            }
+            p {
+                font-size:38px;
+                margin-left:24.3px;
+            }
+        }
+        h4 {
+            @include h4_3850;
+        }
+        h5 {
+            @include h5_3850;
+            font-size:40px;
+            margin:33px 0 0 33px;
+        }
+        .left {
+            border:2.43px solid $border;
+            border-top-left-radius:12px;
+            border-top-right-radius:12px;
+            margin-right:33px;
+            padding-bottom:82px;
+            .quantity {
+                .bottom {
+                    margin-left:33px;
+                    margin-top:213px;
+                    form {
+                        select {
+                            border:1.2px solid $sizes;
+                            border-radius:12px;
+                            padding:12px 47px 12px 24.3px;
+                        }
+                    }
+                }
+                .cam {
+                    margin-left:33px;
+                    margin-top:120px;
+                    form {
+                        select {
+                            border:1.2px solid $sizes;
+                            border-radius:12px;
+                            padding:12px 47px 12px 24.3px;
+                        }
+                    }
+                }
+            }
+            .price {
+                .bottom {
+                    margin-left:33px;
+                    margin-top:157px;
+                }
+                .cam {
+                    margin-left:33px;
+                    margin-top:108px;
+                }
+                .each {
+                    font-size:38px;
+                }
+            }
+            .prod {
+                margin-left:58px;
+                margin-top:120px;
+                .info_area {
+                    margin-left:33px;
+                    .more_info {
+                        font-size:31px;
+                        margin-top:24.3px;
+                    }
+                    p {
+                        font-size:31px;
+                    }
+                }
+            }
+            .remove {
+                .cont {
+                    margin-right:58px;
+                    .bottom {
+                        margin-top:195px;
+                        .heart {
+                            border:2.43px solid $rating;
+                        }
+                        .remo {
+                            border:2.43px solid $rating;
+                            font-size:38px;
+                        }
+                    }
+                    .top {
+                        margin-top:207px;
+                        .heart {
+                            border:2.43px solid $rating;
+                        }
+                        .remo {
+                            border:2.43px solid $rating;
+                            font-size:38px;
+                        }
+                    }
+                }
+            }
+        }
+        .right {
+            .botto {
+                border:2.43px solid $border;
+                border-radius:12px;
+                .cards {
+                    img {
+                        height:57px;
+                        width:406px;
+                    }
+                }
+                .in {
+                    .le {
+                        margin:33px 0 0 33px;
+                        .discount {
+                            font-size:38px;
+                        }
+                        .price {
+                            font-size:38px;
+                        }
+                        .total {
+                            font-size:38px;
+                        }
+                    }
+                    .ri {
+                        margin:33px 33px 0 0;
+                        .price_1 {
+                            font-size:38px;
+                            margin-left:16px;
+                        }
+                        .price_2 {
+                            font-size:38px;
+                        }
+                        .price_3 {
+                            font-size:38px;
+                            margin-left:16px;
+                        }
+                    }
+                }
+                .line {
+                    height:2.43px;
+                    margin:33px 33px 33px 33px;
+                    width:calc(100% - 71px);
+                }
+                .purchase {
+                    margin:33px 0 0;
+                    .purchase_button {
+                        font-size:38px;
+                        padding-left:56px;
+                        padding-right:56px;
+                    }
+                }
+                .shopping {
+                    margin:33px 0 33px 0;
+                    .shopping_button {
+                        border:2.43px solid $border;
+                        font-size:38px;
+                    }
+                }
+            }
+            .top {
+                border:2.43px solid $border;
+                border-radius:12px;
+                margin-bottom:33px;
+                .apply {
+                    font-size:31px;
+                    margin:12px 33px 82px 0;
+                    padding:24.3px 24.3px 24.3px 24.3px;
+                }
+                .cou {
+                    font-size:38px;
+                }
+                .coupon {
+                    border:1.2px solid $border;
+                    border-bottom-left-radius:12px;
+                    border-top-left-radius:12px;
+                    margin:12px 0 82px 33px;
+                    padding:24.3px 58px 24.3px 24.3px;
+                }
+                input[placeholder] {
+                    font-size:27px;
+                }
+                p {
+                    margin:47px 0 0 33px;
+                } 
+            }
+        }
+    }
+}
